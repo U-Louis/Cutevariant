@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-_8" />
+    <title>Cute Variant</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <!-- title -->
+        <div class="flex-row">
+            <a class="flex-row" href=""> <img id="cvlogo" src="assets/cutevariantlogo.png" alt="Cute Variant Logo">
+            </a>
+            <a href="">
+                <p> <strong>Cute</strong>Variant </p>
+            </a>
+
+        </div>
+        <!-- enf of title -->
+
+
+        <!-- navigation -->
+        <nav>
+            <a href="">
+                <p>
+                    Github
+                </p>
+            </a>
+            <a href="">
+                <p>
+                    Documentation
+                </p>
+            </a>
+            <a href="">
+                <p>
+                    A propos
+                </p>
+            </a>
+            <a href="">
+                <p>
+                    Nous aider
+                </p>
+            </a>
+
+        </nav>
+        <!-- end of navigation -->
+    </div>
+    <!-- end of header -->
+
+    <!-- central section -->
+    <section id="centralsection">
+        <h1>Cutevariant</h1>
+        <h2>A standalone and free application to explore
+            <br>genetics variations from Next Generation sequencing</h2>
+        <ul id="menu-deroulant">
+            <li>
+                <a href="#"><strong>Download </strong><img src="assets/arrow.png" alt="arrow"></a>
+                <ul>
+                    <li>
+                        <a class="flex-row" href="#">
+                            <img src="assets/windows.png" alt="windows"> Windows
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex-row" href="#">
+                            <img src="assets/apple.png" alt="apple"> Apple
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex-row" href="#">
+                            <img src="assets/linux.png" alt="linux"> Linux
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="videosList">
+
+            <div>
+                <video class="video" loop poster="assets/placeholder.png">
+				  <source src="/assets/video.mp4" type="video/mp4">
+				  <source src="/assets/video.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</div>
+        </div>
+
+        <script>
+            var figure = $(".video").hover(hoverVideo, hideVideo);
+
+            function hoverVideo(e) {
+                $('video', this).get(0).play();
+            }
+
+            function hideVideo(e) {
+                $('video', this).get(0).pause();
+            }
+        </script>
+
+    </section>
+    <!-- end of central section -->
+
+
+</body>
